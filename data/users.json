@@ -1,0 +1,12 @@
+{
+  "registeredUser": {
+    "email": "",
+    "password": ""
+  },
+  "invalidUser": {
+    "email": "invalid-user-does-not-exist@example.com",
+    "password": "WrongPassword999!"
+  },
+  "invalidPassword": "abcdeefg",
+  "newSignupPassword": "Password!123"
+}
