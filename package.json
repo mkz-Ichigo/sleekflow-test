@@ -1,0 +1,28 @@
+{
+  "name": "sleekflow-test",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for SleekFlow.io",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:login": "bddgen && playwright test --grep @login",
+    "test:signup": "bddgen && playwright test --grep @signup",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "clean": "rm -rf test-results playwright-report .features-gen",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^26.6.4",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "imapflow": "^2.3.0",
+    "mailparser": "^3.9.37"
+  }
+}
