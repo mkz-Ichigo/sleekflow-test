@@ -177,6 +177,10 @@ Instead of arbitrary hardcoded numbers, timeouts are managed in a centralized ti
 
 ## 🧪 Running Tests
 
+### 📊 Live Test Report (GitHub Pages)
+You can view the latest test execution results, detailed logs, failure traces, and video recordings hosted live on GitHub Pages:  
+👉 **[https://mkz-ichigo.github.io/sleekflow-test/](https://mkz-ichigo.github.io/sleekflow-test/)**
+
 | Command | Action |
 |:---|:---|
 | `npm test` | Generate BDD step bindings and run **all scenarios** (headless) |
