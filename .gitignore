@@ -37,3 +37,6 @@ playwright-report/
 test-results/
 .features-gen/
 blob-report/
+
+# Local agent instructions
+agent.md
