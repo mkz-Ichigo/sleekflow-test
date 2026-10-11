@@ -4,6 +4,11 @@ Feature: Login Functionality
   Background:
     Given User is on the login page
 
+@smoke @positive
+  Scenario: Login with correct email and password
+    When User logs in with correct email and password
+    Then User should be redirected to the dashboard
+
   @negative
   Scenario: Login with wrong password
     When User enters registered email
@@ -15,8 +20,3 @@ Feature: Login Functionality
     When User enters invalid email
     And User enters invalid password
     Then User should see an error message
-
-  @smoke @positive
-  Scenario: Login with correct email and password
-    When User logs in with correct email and password
-    Then User should be redirected to the dashboard
